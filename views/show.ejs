@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= singlePokemon.name %>
+    </title>
+</head>
+
+<body>
+    <style>
+        body {text-align:center}
+    </style>
+    <h1>pokedex entry
+        <hr>
+    </h1>
+    <div class="container">
+        <h2> <%= singlePokemon.name %> </h2>
+        <h5> Type: <%= singlePokemon.type %> </h5>
+        <img style="height: 150px; width: 150px;"src= <%= singlePokemon.img %>>
+        <h3>ID: <%= singlePokemon.id %> </h3>
+        <h4> "The <%= singlePokemon.misc.classification %>" </h4>
+        <h5> Ability: <%= singlePokemon.misc.abilities.normal %> </h5>
+        <h5> Hidden ability: <%= singlePokemon.misc.abilities.hidden %> </h5>
+        <h5> Height: <%= singlePokemon.misc.height %> </h5>
+        <h5> Weight: <%= singlePokemon.misc.weight %> lbs </h5>
+    </div>
+</body>
+
+</html>
